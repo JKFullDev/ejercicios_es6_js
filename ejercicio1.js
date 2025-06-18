@@ -5,8 +5,11 @@
 const game = { title: 'The last us 2', gender: ['action', 'zombie', 'survival'], year: 2020 }
 
 
+const gameInfo = { title, gender, year } = game;
 
-
+console.log(`Título: ${title}`);
+console.log(`Género: ${gender}`);
+console.log(`Año: ${year}`);
 
 
 // 1.2 En base al siguiente javascript, usa destructuring para crear 3 variables 
@@ -15,12 +18,11 @@ const game = { title: 'The last us 2', gender: ['action', 'zombie', 'survival'],
 
 const fruits = ['Banana', 'Strawberry', 'Orange'];
 
+const [fruit1, fruit2, fruit3] = fruits;
 
-
-
-
-
-
+console.log(`Fruta 1: ${fruit1}`);
+console.log(`Fruta 2: ${fruit2}`);
+console.log(`Fruta 3: ${fruit3}`);
 
 
 
@@ -30,6 +32,11 @@ const fruits = ['Banana', 'Strawberry', 'Orange'];
 const animalFunction = () => {
     return { name: 'Bengal Tiger', race: 'Tiger' }
 };
+
+const { name, race } = animalFunction();
+
+console.log(`Nombre: ${name}`);
+console.log(`Raza: ${race}`);
 
 
 
