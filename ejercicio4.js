@@ -58,4 +58,4 @@ const streamers3 = streamers3.filter(streamer => streamer.gameMorePlayed.include
             return { ...streamer, gameMorePlayed: streamer.gameMorePlayed.toUpperCase() };
         }
         return streamer;
-    }); -ººººººººººººººººººººººº   
+    }); 
